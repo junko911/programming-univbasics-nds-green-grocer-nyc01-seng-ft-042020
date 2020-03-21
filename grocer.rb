@@ -72,10 +72,16 @@ def apply_coupons(cart, coupons)
       inner_index += 1
     end
   
+<<<<<<< HEAD
     outer_index += 1
   end
   
   cart
+=======
+  outer_index += 1
+  end
+  
+>>>>>>> 6e9a9488b8b891dd550ba8cbbc7b536dd63fd75c
 end
 
 def apply_clearance(cart)
@@ -112,8 +118,13 @@ def checkout(cart, coupons)
   grand_total = 0
   
   index = 0
+<<<<<<< HEAD
   while index < cart.length do
     total += cart[index][:price] * cart[index][:count]
+=======
+  while index < updated_cart.length do
+    total += updated_cart[index][:price] * updated_cart[index][:count]
+>>>>>>> 6e9a9488b8b891dd550ba8cbbc7b536dd63fd75c
     index += 1
   end
   
